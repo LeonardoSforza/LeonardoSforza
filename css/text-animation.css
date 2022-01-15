@@ -1,0 +1,43 @@
+.slider {
+  color: rgb(0, 0, 0);
+  display: inherit;
+  position: relative;
+  animation: 0.0001s linear 0.5s 1 normal forwards running eHXjFd;
+  width: fit-content;
+}
+
+.slider::after {
+  content: "";
+  top: 0;
+  left: 0;
+  position: absolute;
+  width: 0%;
+  height: 100%;
+  background: rgb(0, 0, 0) none repeat scroll 0% 0%;
+  animation: 1s cubic-bezier(0.19, 1, 0.22, 1) 0s 1 normal forwards running
+    bKjwxc;
+}
+
+@keyframes eHXJFd {
+  0% {
+    color: rgb(255, 255, 255);
+  }
+  100% {
+    color: rgb(0, 0, 0);
+  }
+}
+
+@keyframes bKjwxc {
+  0% {
+    left: 0px;
+    width: 0%;
+  }
+  50% {
+    left: 0%;
+    width: 100%;
+  }
+  100% {
+    left: 100%;
+    width: 0%;
+  }
+}

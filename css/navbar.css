@@ -1,0 +1,150 @@
+@import url("https://fonts.googleapis.com/css2?family=Outfit:wght@100;200;300;400;500;600;700;800;900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap");
+
+:root {
+  --font-poppins: "Poppins", sans-serif;
+  --font-outfit: "Outfit", sans-serif;
+
+  --main-color: #e9d1ca;
+  --secondary-color: #fff;
+  --third-color: #121212;
+  --fourth-color: #183330;
+
+  --text-size-t0: 10.5vw;
+  --text-size-t1: 8vw;
+  --text-size-t1-slim: 5vw;
+  --text-size-t2: 4.5vw;
+  --text-size-t3: 2vw;
+}
+
+.navbar-body {
+  width: 100%;
+  height: 100vh;
+  position: absolute;
+  background: #111;
+  z-index: 102;
+  right: 100%;
+  transition: 0.5s right;
+}
+
+.show {
+  right: 0;
+  top: 0;
+}
+
+.nav-item {
+  font-size: min(8vh, 13vw);
+  line-height: 10vh;
+  font-weight: bold;
+  padding: 1rem 0;
+}
+
+@supports ((text-stroke: 1px #000) or (-webkit-text-stroke: 1px #000)) {
+  .outline-dark {
+    color: transparent;
+    -webkit-text-stroke: 1px #fff;
+    text-stroke: 1px #fff;
+    text-shadow: none;
+  }
+}
+
+.nav-social {
+  position: absolute;
+  margin-bottom: 60px;
+  bottom: 0;
+}
+
+.nav-icon {
+  cursor: pointer;
+  color: #fff;
+  font-size: 1.5rem;
+  margin: 0 10px;
+}
+
+.text-bg-slider {
+  display: inline-block;
+  position: relative;
+  overflow: hidden;
+  background: linear-gradient(
+    to right,
+    var(--third-color),
+    var(--third-color) 50%,
+    var(--secondary-color) 50%
+  );
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-size: 200% 100%;
+  background-position: 100%;
+  transition: background-position 2s ease;
+  text-decoration: none;
+}
+
+.text-bg-slider:hover {
+  background-position: 0 100%;
+}
+
+.navbar {
+  top: 0;
+  width: 100%;
+  padding: 2rem;
+}
+
+.ham {
+  height: 60px;
+  width: 60px;
+  border-radius: 50%;
+  position: relative;
+  z-index: 103;
+  background-color: #fff;
+}
+
+.ham:hover {
+  cursor: pointer;
+}
+
+.ham-line {
+  width: 40px;
+  height: 4px;
+  background-color: #000;
+  border-radius: 12px;
+  margin: 0;
+  transition: all 1ms linear;
+}
+
+.hide-nav #ham-up {
+  margin-bottom: 10px;
+}
+
+.hide-nav:hover #ham-up {
+  margin-bottom: 7px;
+}
+
+.hide-nav #ham-up,
+.hide-nav #ham-down {
+  transform: rotate(0deg);
+  transition: 0.3s;
+}
+
+.close-up {
+  position: absolute;
+  margin: 0;
+  transform: rotate(-45deg);
+  transition: 0.3s;
+}
+
+.close-down {
+  position: absolute;
+  transform: rotate(45deg);
+  transition: 0.3s;
+}
+
+.contact-btn {
+  color: #fff;
+  background-color: #000;
+  padding: 1rem 2rem;
+  border-radius: 20px;
+  position: relative;
+  z-index: 101;
+  box-shadow: 0 3px 6px rgba(0, 0, 0, 0.16), 0 3px 6px rgba(0, 0, 0, 0.23);
+}

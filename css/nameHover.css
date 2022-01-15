@@ -1,0 +1,34 @@
+#me-line-box {
+  transition: 0.4s;
+}
+
+#name {
+  transition: 0.4s;
+}
+
+#social {
+  transition: 0.4s;
+}
+
+#work {
+  transition: 0.4s;
+}
+
+#social-line-box {
+  transition: 0.4s;
+}
+
+#work-line-box {
+  transition: 0.4s;
+}
+
+.blur-text {
+  color: transparent;
+  text-shadow: #111 0 0 3px;
+  transition: 0.4s;
+}
+
+.blur {
+  filter: blur(1.5px);
+  transition: 0.4s;
+}

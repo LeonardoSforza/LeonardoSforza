@@ -1,0 +1,48 @@
+body {
+  overflow-y: hidden;
+  /* background: #000; */
+}
+
+canvas {
+  /* background: #fff; */
+  position: absolute;
+  width: 100%;
+  height: 100vh;
+  z-index: 100;
+}
+
+.interactive-tag {
+  padding: 20px;
+  position: relative;
+  z-index: 101;
+  background: rgba(255, 255, 255, 0.8);
+}
+/* This has to change */
+.interactive-tag:hover {
+  cursor: pointer;
+}
+
+.interactive-tag h1 {
+  /* font-size: 5vw; */
+}
+
+.main-line {
+  width: 100%;
+  height: 2px;
+  background-color: #000;
+  border-radius: 12px;
+}
+
+.link-line {
+  height: 5px;
+  width: 2px;
+  background: #000;
+}
+
+#social-line-box {
+  margin-right: 10px;
+}
+
+.navbar {
+  position: absolute !important;
+}

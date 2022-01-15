@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Leoanrdo Sforza</title>
+    <link rel="shortcut icon" type="image/svg" href="favicon/favicon.svg" />
+    <link rel="stylesheet" href="css/reset.css" />
+    <link rel="stylesheet" href="css/layout.css" />
+    <link rel="stylesheet" href="css/text-animation.css" />
+    <link rel="stylesheet" href="css/index.css" />
+    <link rel="stylesheet" href="css/nameHover.css" />
+    <link rel="stylesheet" href="css/navbar.css" />
+  </head>
+  <body onload="setTimeout('redirect()', 300)">
+    <script type="text/javascript">
+      function redirect() {
+        if (screen.width <= 545) {
+          window.location = "pages/about.html";
+        }
+      }
+    </script>
+    <!-- <div class="container flex flex-col flex-width-center">
+      <div class="row welcome-bitmojo">
+        <img class="img-welcome-bit" src="bitmojo/bit4.png" />
+      </div>
+      <span class="name slider t-name">
+        <img src="logo/logo-main.png" alt="" />
+      </span>
+    </div> -->
+
+    <canvas id="canvas"></canvas>
+
+    <div class="navbar-body" id="navSlider">
+      <div class="container full-page flex flex-col flex-all-center">
+        <a href="pages/about.html">
+          <h1 class="nav-item outline-dark text-bg-slider">1. About Me</h1>
+        </a>
+        <a href="#">
+          <h1 class="nav-item outline-dark text-bg-slider">2. My Social</h1>
+        </a>
+        <a href="#">
+          <h1 class="nav-item outline-dark text-bg-slider">3. My Work</h1>
+        </a>
+        <div class="nav-social">
+          <a href="https://www.instagram.com/leonardosforza108/">
+            <ion-icon class="nav-icon" name="logo-instagram"></ion-icon>
+          </a>
+
+          <ion-icon class="nav-icon" name="logo-github"></ion-icon>
+          <ion-icon class="nav-icon" name="logo-whatsapp"></ion-icon>
+        </div>
+      </div>
+    </div>
+
+    <div class="navbar flex flex-between flex-width-center">
+      <div class="ham flex flex-col flex-all-center hide-nav" id="ham">
+        <div class="ham-line" id="ham-up"></div>
+        <div class="ham-line" id="ham-down"></div>
+      </div>
+      <a href="#" class="contact-btn magnet" id="contact-btn">Contact Me</a>
+    </div>
+
+    <div class="full-page flex flex-all-center">
+      <div class="interactive-tag">
+        <!-- Line 1 -->
+        <div class="me-lines flex flex-col flex-all-center" id="me-line-box">
+          <span class="name slider">
+            <h4 class="text-center">About Me</h4>
+          </span>
+          <div class="full-width flex flex-all-center">
+            <div class="link-line"></div>
+          </div>
+          <div class="main-line"></div>
+          <div class="full-width flex flex-between">
+            <div class="link-line"></div>
+            <div class="link-line"></div>
+          </div>
+        </div>
+        <!-- Line 2 -->
+        <div class="flex">
+          <span class="name slider">
+            <h1 id="name">leonardosforza</h1>
+            <h1 id="social">108@</h1>
+            <h1 id="work">my.work</h1>
+          </span>
+        </div>
+        <!-- Line 3 -->
+        <div class="flex">
+          <div
+            class="flex flex-between flex-col flex-all-center"
+            id="social-line-box"
+          >
+            <div class="full-width flex flex-between">
+              <div class="link-line"></div>
+              <div class="link-line"></div>
+            </div>
+            <div class="main-line"></div>
+            <div class="full-width flex flex-all-center">
+              <div class="link-line"></div>
+            </div>
+            <span class="name slider">
+              <h4 class="text-center">My Social</h4>
+            </span>
+          </div>
+          <div
+            class="flex flex-between flex-col flex-all-center"
+            id="work-line-box"
+          >
+            <div class="full-width flex flex-between">
+              <div class="link-line"></div>
+              <div class="link-line"></div>
+            </div>
+            <div class="main-line"></div>
+            <div class="full-width flex flex-all-center">
+              <div class="link-line"></div>
+            </div>
+            <span class="name slider">
+              <h4 class="text-center">Check It Out</h4>
+            </span>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- <div class="follow"></div> -->
+
+    <!-- <script src="assets/js/magnet-mouse.js"></script> -->
+    <script src="js/navigation.js"></script>
+    <script src="js/index.js"></script>
+    <script src="js/mouse.js"></script>
+    <!-- <script src="js/canvas.js"></script> -->
+    <script src="js/canvas-stars-movement.js"></script>
+    <script
+      type="module"
+      src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"
+    ></script>
+    <script
+      nomodule
+      src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"
+    ></script>
+  </body>
+</html>
