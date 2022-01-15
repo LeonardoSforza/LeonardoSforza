@@ -7,30 +7,41 @@
   width: 60px;
   background-color: rgb(219, 219, 219);
   border-radius: 15px;
-  position: relative;
   margin-right: 5px;
 }
 
 .full:after {
+  border-radius: 15px;
   content: "";
-  position: absolute;
-  top: 0;
-  left: 0;
   display: block;
   height: 100%;
   width: 100%;
-  border-radius: 15px;
   background-color: #3f4f7d;
 }
 
 .almost-full:after {
+  width: 80%;
   content: "";
-  position: absolute;
-  top: 0;
-  left: 0;
   display: block;
   height: 100%;
-  width: 80%;
-  border-radius: 15px;
   background-color: #3f4f7d;
+  border-radius: 15px;
+}
+
+.half-full:after {
+  width: 50%;
+  content: "";
+  display: block;
+  height: 100%;
+  background-color: #3f4f7d;
+  border-radius: 15px;
+}
+
+.almost-empty:after {
+  width: 20%;
+  content: "";
+  display: block;
+  height: 100%;
+  background-color: #3f4f7d;
+  border-radius: 15px;
 }
