@@ -92,3 +92,20 @@ h6 {
 .full-width {
   width: 100%;
 }
+
+@media screen and (max-width: 768px) {
+  .tablet-break {
+    flex-direction: column;
+  }
+  .forty,
+  .sixty {
+    width: 100%;
+  }
+}
+
+@media screen and (max-width: 568px) {
+  .forty {
+    padding-left: 0;
+    padding-right: 0;
+  }
+}

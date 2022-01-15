@@ -9,3 +9,49 @@
   background-repeat: no-repeat;
   background-size: cover;
 }
+
+@media screen and (max-width: 768px) {
+  .about-img-box {
+    width: 90%;
+    height: 300px;
+    margin: auto;
+    background: url(../img/graduation.jpg);
+    background-position: center;
+    background-size: cover;
+    position: relative;
+    border-radius: 12px;
+    box-shadow: 0 0 0 10px rgb(231 231 231);
+  }
+
+  /* .about-img-box:hover::before {
+    content: "";
+    display: block;
+    height: 100%;
+    width: 100%;
+    background: #d7d7d7;
+    position: absolute;
+    top: -10px;
+    left: -10px;
+    z-index: -1;
+    border-radius: 12px;
+  } */
+
+  .about-img-box:hover::after {
+    content: "me";
+    display: block;
+    width: fit-content;
+    padding: 6px 12px;
+    color: #111;
+    background: #fff;
+    border-radius: 12px;
+    position: absolute;
+    top: 50%;
+    left: 63%;
+  }
+}
+
+@media screen and (max-width: 568px) {
+  .about-img-box {
+    width: 100%;
+  }
+}
